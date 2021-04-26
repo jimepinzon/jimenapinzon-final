@@ -1,0 +1,32 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Discography{% endblock %}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+</style>
+
+{% block page_description %}A complete rundown of Queen's discography from beginnign to end.{% endblock %}
+
+{% block content %}
+  <title>Discography</title>
+
+  <article class="container">
+    <h1>Discography</h1>
+    <p>Here is a rundowown of Queen's complete discography.</p>
+    <div class="row">
+      {% for  album in queen.discography %}
+      <div class="col-sm-6 col-lg-4">
+        <div class="card mb-4 bg-light border-black">
+        <img src="../img/discs/{{ album.image }}" alt="">
+          <div class="card-body">
+            <h5 class="card-title">{{ album.title }}</h5>
+            <p class="card-text">{{ album.year }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </article>
+{% endblock %}
+ 
+    
