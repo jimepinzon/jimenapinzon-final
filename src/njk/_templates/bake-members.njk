@@ -3,6 +3,9 @@
 {% from '_macros/prose.njk' import prose %}
 
 {% block page_title %}{{ name }}{% endblock %}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+</style>
 
 {% block page_description %}{{ title }} Text goes here{% endblock %}
 
@@ -13,7 +16,7 @@
         <img src="../img/members/{{ image }}" alt="queen member" class="img-fluid mb-4">
       </div>
       <div class="col-sm-8">
-        <h1> {{ name }} </h1>
+        <h1 class="name"> {{ name }} </h1>
         <p> {{ description | safe }} </p>
       </div>
     </div>

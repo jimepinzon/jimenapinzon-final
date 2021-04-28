@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+
+
 .jumbotron.banner {
-  background: url(../img/queen-band-early.jpg) no-repeat center;
+  background: url(../img/queen-live-on-stage.jpg) no-repeat center;
   background-size: cover;
-  color: rgb(237, 237, 243);
-  padding-top: 12rem
+  color: rgb(238, 228, 206);
+  padding-top: 12rem;
+  font-family: 'Cinzel';
+  font-style: extra-bold 800;
 }
 
 .jumbotron {
