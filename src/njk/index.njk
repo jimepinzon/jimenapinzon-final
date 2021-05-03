@@ -2,7 +2,8 @@
 
 {% block page_title %}Home{% endblock %}
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 </style>
 
 {% block page_description %}All about Queen, the members, their rise to fame and their discography.{% endblock %}
@@ -10,10 +11,10 @@
 {% block content %}
 <div class="container">
     <h2 class="intro">All things Queen: members, discography and more. </h2>
-    <p>Queen are a British rock band formed in London in 1970. Their classic like-up was Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their earliest works were influenced by progressive rock, hard rock and heavy metal, but the band gradually ventured into more conventional and radio-friendly works by incorporating further tyles, such as arena rock and pop rock.</p>
+    <p>Formed in London in 1970, Queen is a break-through rock band with 15 albums under their belt. Four members make up the line-up: Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). From the beginning, they have been known for their unique instrumentation and progressive rock sound. From sold-out arenas to movie soundtracks, Queen has done it all.</p>
   <div class="row">
   {% for member in queen.members %}
-    <div class="col-lg-4">
+    <div class="col-lg-3">
       <img src="img/members/{{ member.slug }}-color.jpg" alt="" class="img-fluid">
       <h3 class="members"> <a href="member/{{ member.slug }}.html"> {{ member.name }} </a></h3>
     </div>
