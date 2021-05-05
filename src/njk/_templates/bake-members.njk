@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 </style>
 
-{% block page_description %}{{ title }} Text goes here{% endblock %}
+{% block page_description %}{{ title }} Members {% endblock %}
 
 {% block content %}
   <article class="container">
@@ -17,6 +17,8 @@
       </div>
       <div class="col-sm-8">
         <h1 class="name"> {{ name }} </h1>
+        <p class="info"> {{ instruments }} {{ tenure }} </p>
+        <p class="origin"> Born: {{ birthplace }} {{ birthdate }} </p>
         <p> {{ description | safe }} </p>
       </div>
     </div>

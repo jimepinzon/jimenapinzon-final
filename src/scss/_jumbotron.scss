@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
 
 
 .jumbotron.banner {
@@ -7,9 +7,14 @@
   color: rgb(238, 228, 206);
   padding-top: 12rem;
   font-family: 'Cinzel';
-  font-style: extra-bold 800;
+  font-weight: bold;
 }
 
 .jumbotron {
   margin-bottom: 30px;
+}
+
+.main {
+  font-size: 4rem;
+  font-weight: bold;
 }
