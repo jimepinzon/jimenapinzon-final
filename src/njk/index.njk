@@ -14,7 +14,7 @@
     <p>Formed in London in 1970, Queen is a break-through rock band with 15 albums under their belt. Four members make up the line-up: Freddie Mercury (lead vocals, piano), Brian May (guitar, vocals), Roger Taylor (drums, vocals) and John Deacon (bass). From the beginning, they have been known for their unique instrumentation and progressive rock sound. From sold-out arenas to movie soundtracks, Queen has done it all.</p>
   <div class="row">
   {% for member in queen.members %}
-    <div class="col-lg-3">
+    <div class="col-lg-3 col-sm-6">
       <img src="img/members/{{ member.slug }}-color.jpg" alt="" class="img-fluid">
       <h3 class="members"> <a href="member/{{ member.slug }}.html"> {{ member.name }} </a></h3>
     </div>
